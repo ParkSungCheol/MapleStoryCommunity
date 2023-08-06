@@ -1,0 +1,114 @@
+.wrapper {
+    width: 100%;
+    height: 470px;
+ 
+
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 70%;
+    height: 100%;
+    margin: 30px;
+
+    /* border: 1px solid black; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    margin: 20px;
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.myPageTable {
+    width: 500px;
+}
+
+.myPageTable label {
+    font-weight: bold;
+}
+
+.myPageTable input {
+    width: 200px;
+    height: 30px;
+}
+
+.myPageTable td {
+    width: 100px;
+    height: 50px;
+}
+
+
+.myPageTable td div span {
+    font-size: 12px;
+    color: red;
+}
+
+
+
+.inputImageContainer {
+    /* border: 1px solid black; */
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.previewImg img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+.inputImageContainer form {
+    margin-bottom: 30px;
+}
+
+.inputImageContainer label {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(230, 198, 96);
+    font-weight: bold;
+}
+
+.inputImageContainer button {
+    margin-bottom: 30px;
+    font-size: 20px;
+    border: 0;
+    background-color: azure;
+}
+
+.inputImageContainer button:hover {
+    background-color: rgb(230, 198, 96);
+}
+
+
+.inputImageContainer input {
+    display: none;
+}
+
+.userUpdateBtn {
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-weight: bold;
+    background-color: rgb(230, 198, 96);
+}
+
+
+.hidden {
+    display: none;
+}

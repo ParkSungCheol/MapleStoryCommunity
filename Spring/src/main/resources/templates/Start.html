@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Start Page</title>
+    <link rel="stylesheet" href="Start.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="header">
+            <!-- <h3>Welcome to the MaleStory Community</h3> -->
+
+            <!-- 메이플스토리 로고 이미지 -->
+            <img src="Images/maple_logo.jpg" alt="Can't loading...">
+        </div>
+
+        <div class="content">
+
+            <!-- 넥슨 로그인 화면 / Chrome에서 Muted를 하지 않으면 autoplay 불가능 -->
+            <video id="nexonVideo" class="" autoplay muted>
+                <source src="Images/Nexon Logo.mp4" type="video/mp4">
+            </video>
+
+            <!-- 로고, 로그인 화면 삭제 후 이미지 -->
+            <img src="Images/MapleStory.jpg" alt="" class="mapleBG hidden" width="1200" height="820">
+
+            <!-- Enter 버튼 -->
+            <button type="button" class="enterBtn hidden" onclick="location.href='http://localhost:8088/login'">Enter</button>
+        
+        </div>
+
+    </div>
+    
+    <script src="start.js"></script>
+
+</body>
+
+</html>

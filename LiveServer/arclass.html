@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('메이플 직업사진/궁수/궁수소개.png') ; 
+            background-size: 350px;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            position: relative;
+        }
+        .photo{
+            text-align: left;
+            margin-left: 32px;
+            margin-top: 150px;
+            font-family: '없는 글꼴',맑은 고딕;
+            
+        }
+      
+       #arc{
+          padding-left: 17px; 
+          padding-right: 17px; 
+          
+         
+       }
+       #bow{
+        padding-left: 10px; 
+          padding-right: 10px; 
+          margin-left: 1.5px;
+       }
+       
+        
+    </style>
+</head>
+
+<body>
+    <div class="photo ">
+        <button id="arc">신궁</button>
+        <button id="bow">보우마스터</button>
+    </div>
+    <script>
+        var element = document.getElementById("arc");
+        element.addEventListener('click', () => {
+            let width = 500;
+            let height = 445;
+            let top = (window.innerHeight - height) / 2 + screenY;
+            let left = (window.innerWidth - width) / 2 + screenX;
+
+            let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+            spec += ', width=' + width + ', height=' + height;
+            spec += ', top=' + top + ', left=' + left;
+
+            window.open('메이플 직업사진/궁수/신궁.png', 'popup', spec);
+        });
+
+        var element = document.getElementById("bow");
+        element.addEventListener('click', () => {
+            let width = 500;
+            let height = 445;
+            let top = (window.innerHeight - height) / 2 + screenY;
+            let left = (window.innerWidth - width) / 2 + screenX;
+
+            let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+            spec += ', width=' + width + ', height=' + height;
+            spec += ', top=' + top + ', left=' + left;
+
+            window.open('메이플 직업사진/궁수/보우마스터.png', 'popup', spec);
+        });
+    </script>
+</body>
+</html>

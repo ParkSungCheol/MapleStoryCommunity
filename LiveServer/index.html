@@ -1,0 +1,471 @@
+
+<html>
+<head>
+    <title>Maple Cummunity</title>
+    <script type= "text/javascript"  src = "phaser.min.js"></script>
+  
+    <script type= "text/javascript"  src = "Mayahouse.js"></script>
+    <script type= "text/javascript"  src = "Posionshop.js"></script>
+    <script type= "text/javascript"  src = "wapponshop.js"></script>
+    <script type= "text/javascript"  src = "Ship.js"></script>
+    <script type= "text/javascript"  src = "Market.js"></script>
+    <script type= "text/javascript"  src = "Henesis.js"></script>
+    <script type= "text/javascript"  src = "Config.js"></script>
+    <link rel="stylesheet" href="./ex.css">
+    <script>
+    var url = decodeURIComponent(location.href);
+    url = decodeURIComponent(url);
+    var params;
+    // url에서 '?' 문자 이후의 파라미터 문자열까지 자르기
+    params = url.substring( url.indexOf('?')+1, url.length );
+    // 파라미터 구분자("&") 로 분리
+    params = params.split("&&");
+    params[0] = params[0].split("=")[1];
+    params[1] = params[1].split("=")[1];
+    console.log(params[0]); // image
+    console.log(params[1]); // uid
+
+    </script>
+</head> 
+<body>
+    
+        <dialog id = "input-box" style="display: none;">
+            <div id="box" >
+
+                <small>
+                <b>어떤 게시판을 들어갈래요?</b> 
+                <br>
+                <a href="javascript:;" id="free">자유게시판</a><br>
+                <a href="javascript:;" id="strategy">전략게시판</a><br>
+                <a href="javascript:;" id="guild">길드게시판</a><br>
+                <a href="javascript:;" id="raid">파티찾기게시판</a><br>
+                <a href="javascript:;" id="spec">스펙별게시판</a><br>
+              
+                   
+                    <button type="button" id ="btn">확인</button>
+                                                            </small>
+            </div>
+            <script>
+                var element = document.getElementById("free");
+                element.addEventListener('click', () => {
+                    let width = 1700;
+                    let height = 1000;
+                    let top = (window.innerHeight - height) / 2 + screenY;
+                    let left = (window.innerWidth - width) / 2 + screenX;
+        
+                    let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                    spec += ', width=' + width + ', height=' + height;
+                    spec += ', top=' + top + ', left=' + left;
+        
+                    window.open(`http://localhost:3000/free?${params[1]}`, 'popup', spec);
+                });
+                var element = document.getElementById("strategy");
+                element.addEventListener('click', () => {
+                    let width = 1700;
+                    let height = 1000;
+                    let top = (window.innerHeight - height) / 2 + screenY;
+                    let left = (window.innerWidth - width) / 2 + screenX;
+        
+                    let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                    spec += ', width=' + width + ', height=' + height;
+                    spec += ', top=' + top + ', left=' + left;
+        
+                    window.open(`http://localhost:3000/strategy?${params[1]}`, 'popup', spec);
+                });
+                var element = document.getElementById("guild");
+                element.addEventListener('click', () => {
+                    let width = 1700;
+                    let height = 1000;
+                    let top = (window.innerHeight - height) / 2 + screenY;
+                    let left = (window.innerWidth - width) / 2 + screenX;
+        
+                    let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                    spec += ', width=' + width + ', height=' + height;
+                    spec += ', top=' + top + ', left=' + left;
+        
+                    window.open(`http://localhost:3000/guild?${params[1]}`, 'popup', spec);
+                });
+                var element = document.getElementById("raid");
+                element.addEventListener('click', () => {
+                    let width = 1700;
+                    let height = 1000;
+                    let top = (window.innerHeight - height) / 2 + screenY;
+                    let left = (window.innerWidth - width) / 2 + screenX;
+        
+                    let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                    spec += ', width=' + width + ', height=' + height;
+                    spec += ', top=' + top + ', left=' + left;
+        
+                    window.open(`http://localhost:3000/raid?${params[1]}`, 'popup', spec);
+                });
+                var element = document.getElementById("spec");
+                element.addEventListener('click', () => {
+                    let width = 1700;
+                    let height = 1000;
+                    let top = (window.innerHeight - height) / 2 + screenY;
+                    let left = (window.innerWidth - width) / 2 + screenX;
+        
+                    let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                    spec += ', width=' + width + ', height=' + height;
+                    spec += ', top=' + top + ', left=' + left;
+        
+                    window.open(`http://localhost:3000/spec?${params[1]}`, 'popup', spec);
+                });
+             
+            </script>
+    </dialog>
+
+    <dialog id = "input-box1" style="display: none;">
+        <div id="box1" >
+
+            <small>
+            <b>거래하러 오셨나요?</b> 
+            <br>
+            <br> <a href="javascript:;" id="item">아이템 거래게시판</a><br>
+            <br><br><br>
+                <button type="button" id ="btn1">확인</button>
+                                                        </small>
+        </div>
+        <script>
+            var element = document.getElementById("item");
+            element.addEventListener('click', () => {
+                let width = 1700;
+                let height = 1000;
+                let top = (window.innerHeight - height) / 2 + screenY;
+                let left = (window.innerWidth - width) / 2 + screenX;
+    
+                let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                spec += ', width=' + width + ', height=' + height;
+                spec += ', top=' + top + ', left=' + left;
+    
+                window.open(`http://localhost:3000/item?${params[1]}`, 'popup', spec);
+            });
+        </script>
+</dialog>
+
+<dialog id = "input-box2" style="display: none;">
+    <div id="box" >
+
+        <small>
+        <b>팬아트갤러리에 오신 것을 환영합니다! <br> 오늘도 다양한 모험가님들이 직접 창작하신 작품을 여럿 출품했답니다! 혹시 구경하고 싶으신가요? </b> <br>
+        <br> <a href="javascript:;" id="fan">팬아트갤러리 구경하러가기</a><br> 
+           
+            <button type="button" id ="btn2">확인</button>
+                                                    </small>
+    </div>
+    <script>
+        var element = document.getElementById("fan");
+        element.addEventListener('click', () => {
+            let width = 1260;
+            let height = 700;
+            let top = (window.innerHeight - height) / 2 + screenY;
+            let left = (window.innerWidth - width) / 2 + screenX;
+
+            let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+            spec += ', width=' + width + ', height=' + height;
+            spec += ', top=' + top + ', left=' + left;
+
+            window.open(`./fanart/FanArt.html?${params[1]}`, 'popup', spec);
+        });
+    </script>
+</dialog>
+
+<dialog id = "input-box3" style="display: none;">
+    <div id="box" >
+
+        <small>
+        <b>최근 메이플아일랜드에서 일어났던 범죄소식 들으셨나요? 최근들어서 너무 많은 이슈가 터져서 이래저래 정신이 없답니다. 모험가님은 최근 소식이 궁금하신가요?</b> 
+        <br> <a href="javascript:;" id="news">뉴스게시판</a><br>
+           
+            <button type="button" id ="btn3">확인</button>
+                                                    </small>
+    </div>
+    <script>
+        var element = document.getElementById("news");
+        element.addEventListener('click', () => {
+            let width = 1700;
+            let height = 1000;
+            let top = (window.innerHeight - height) / 2 + screenY;
+            let left = (window.innerWidth - width) / 2 + screenX;
+
+            let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+            spec += ', width=' + width + ', height=' + height;
+            spec += ', top=' + top + ', left=' + left;
+
+            window.open(`http://localhost:3000/news?${params[1]}`, 'popup', spec);
+        });
+    </script>
+</dialog>
+
+<dialog id = "input-box4" style="display: none;">
+    <div id="box" >
+        <div id="body_arclass">
+            <b>궁수</b><br>
+            <small>레벨이 오를수록 빠른 공격속도를 자랑하는 궁수!! 직업 특성상 지형을 이용한 사냥에 강한 면모를 보입니다.</small><br>
+            <small>[직업트리]</small><br>
+            <div class="photo_arclass">
+                <button id="arc">신궁</button>
+                <button id="bow">보우마스터</button>
+            </div>
+            <script>
+                var element = document.getElementById("arc");
+                element.addEventListener('click', () => {
+                    let width = 500;
+                    let height = 445;
+                    let top = (window.innerHeight - height) / 2 + screenY;
+                    let left = (window.innerWidth - width) / 2 + screenX;
+        
+                    let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                    spec += ', width=' + width + ', height=' + height;
+                    spec += ', top=' + top + ', left=' + left;
+        
+                    window.open('메이플 직업사진/궁수/신궁.png', 'popup', spec);
+                });
+        
+                var element = document.getElementById("bow");
+                element.addEventListener('click', () => {
+                    let width = 500;
+                    let height = 445;
+                    let top = (window.innerHeight - height) / 2 + screenY;
+                    let left = (window.innerWidth - width) / 2 + screenX;
+        
+                    let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                    spec += ', width=' + width + ', height=' + height;
+                    spec += ', top=' + top + ', left=' + left;
+        
+                    window.open('메이플 직업사진/궁수/보우마스터.png', 'popup', spec);
+                });
+            </script>
+        </div> 
+           
+            <button type="button" id ="btn4">확인</button>
+                                                    </small>
+    </div>
+</dialog>
+
+<dialog id = "input-box5" style="display: none;">
+    <div id="box" >
+
+        <div id="body_niclass">
+            <b>도적</b><br>
+            <small>상대를 기습하거나 은신하는 도적은 체력은 타 직업에 대해 부족한 대신 가장 강력한 공격 스킬을 가지고 있습니다.</small><br>
+            <small>[직업트리]</small><br>
+            <div class="photo_niclass">
+                <button id="sss">섀도어</button >
+                <button id="nnn">나이트로드</button >
+                
+                    </div>
+        
+                    <script>
+                        var element = document.getElementById("sss");
+                        element.addEventListener('click', () => {
+                            let width = 500;
+                            let height = 445;
+                            let top = (window.innerHeight - height) / 2 + screenY;
+                            let left = (window.innerWidth - width) / 2 + screenX;
+                
+                            let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                            spec += ', width=' + width + ', height=' + height;
+                            spec += ', top=' + top + ', left=' + left;
+                
+                            window.open('메이플 직업사진/도적/섀도어.png', 'popup', spec);
+                        });
+                
+                        var element = document.getElementById("nnn");
+                        element.addEventListener('click', () => {
+                            let width = 500;
+                            let height = 445;
+                            let top = (window.innerHeight - height) / 2 + screenY;
+                            let left = (window.innerWidth - width) / 2 + screenX;
+                
+                            let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                            spec += ', width=' + width + ', height=' + height;
+                            spec += ', top=' + top + ', left=' + left;
+                
+                            window.open('메이플 직업사진/도적/나이트로드.png', 'popup', spec);
+                        });
+                    </script>
+                    </div>
+           
+            <button type="button" id ="btn5">확인</button>
+                                                    </small>
+    </div>
+</dialog>
+
+<dialog id = "input-box6" style="display: none;">
+    <div id="box" >
+        <b>마법사</b><br>
+        <small>다른 직업에 비해 방어력이 낮고 체력이 약하지만 화려한 이펙트의 마법과 파티원들에게 유용한 보조마법을 사용합니다.</small><br>
+        <small>[직업트리]</small><br>
+        <div class="body_mgclass">
+
+            <div class="photo_mgclass">
+                <button id="fire">불독</button >
+                <button id="ice">썬콜</button >
+                <button id="heal">비숍</button>
+                    </div>
+        
+                    <script>
+                        var element = document.getElementById("fire");
+                        element.addEventListener('click', () => {
+                            let width = 500;
+                            let height = 445;
+                            let top = (window.innerHeight - height) / 2 + screenY;
+                            let left = (window.innerWidth - width) / 2 + screenX;
+                
+                            let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                            spec += ', width=' + width + ', height=' + height;
+                            spec += ', top=' + top + ', left=' + left;
+                
+                            window.open('메이플 직업사진/마법사/불독.png', 'popup', spec);
+                        });
+                
+                        var element = document.getElementById("ice");
+                        element.addEventListener('click', () => {
+                            let width = 500;
+                            let height = 445;
+                            let top = (window.innerHeight - height) / 2 + screenY;
+                            let left = (window.innerWidth - width) / 2 + screenX;
+                
+                            let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                            spec += ', width=' + width + ', height=' + height;
+                            spec += ', top=' + top + ', left=' + left;
+                
+                            window.open('메이플 직업사진/마법사/썬콜.png', 'popup', spec);
+                        });
+        
+                        var element = document.getElementById("heal");
+                        element.addEventListener('click', () => {
+                            let width = 500;
+                            let height = 445;
+                            let top = (window.innerHeight - height) / 2 + screenY;
+                            let left = (window.innerWidth - width) / 2 + screenX;
+                
+                            let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                            spec += ', width=' + width + ', height=' + height;
+                            spec += ', top=' + top + ', left=' + left;
+                
+                            window.open('메이플 직업사진/마법사/비숍.png', 'popup', spec);
+                        });
+                    </script>
+                    </div>
+           
+            <button type="button" id ="btn6">확인</button>
+                                                    </small>
+    </div>
+</dialog>
+
+<dialog id = "input-box7" style="display: none;">
+    <div id="box" >
+
+        <div id="body_warriorclass">
+            <b>전사</b><br>
+        <small>강한 공격력과 체력을 지니고 있는 직업으로 전투 상황에서는 보스와의 싸움에서 그 진가를 발휘합니다. 저만 믿으세요!!</small><br>
+        <small>[직업트리]</small><br>
+            <div class="photo_warriorclass">
+                <button id="hero">히어로</button >
+                <button id="paladin">팔라딘</button >
+                <button id="knight">다크나이트</button>
+                    </div>
+        
+                    <script>
+                        var element = document.getElementById("hero");
+                        element.addEventListener('click', () => {
+                            let width = 500;
+                            let height = 445;
+                            let top = (window.innerHeight - height) / 2 + screenY;
+                            let left = (window.innerWidth - width) / 2 + screenX;
+                
+                            let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                            spec += ', width=' + width + ', height=' + height;
+                            spec += ', top=' + top + ', left=' + left;
+                
+                            window.open('메이플 직업사진/전사/히어로.png', 'popup', spec);
+                        });
+                
+                        var element = document.getElementById("paladin");
+                        element.addEventListener('click', () => {
+                            let width = 500;
+                            let height = 445;
+                            let top = (window.innerHeight - height) / 2 + screenY;
+                            let left = (window.innerWidth - width) / 2 + screenX;
+                
+                            let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                            spec += ', width=' + width + ', height=' + height;
+                            spec += ', top=' + top + ', left=' + left;
+                
+                            window.open('메이플 직업사진/전사/팔라딘.png', 'popup', spec);
+                        });
+        
+                        var element = document.getElementById("knight");
+                        element.addEventListener('click', () => {
+                            let width = 500;
+                            let height = 445;
+                            let top = (window.innerHeight - height) / 2 + screenY;
+                            let left = (window.innerWidth - width) / 2 + screenX;
+                
+                            let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                            spec += ', width=' + width + ', height=' + height;
+                            spec += ', top=' + top + ', left=' + left;
+                
+                            window.open('메이플 직업사진/전사/다크나이트.png', 'popup', spec);
+                        });
+                    </script>
+                    </div>
+           
+            <button type="button" id ="btn7">확인</button>
+                                                    </small>
+    </div>
+</dialog>
+
+<dialog id = "input-box8" style="display: none;">
+    <div id="box" >
+
+        <div id="body_blclass">
+            <b>해적</b><br>
+            <small>총을 사용하거나 체술을 사용하는 직업으로 전직을 할수록 특성이 극대화되는 특징을 가지고 있습니다.</small><br>
+            <small>[직업트리]</small><br>
+            <div class="photo_blclass">
+                <button id="bbb">바이퍼</button >
+                <button id="kkk">캡틴</button >
+                
+                    </div>
+                    <script>
+                        var element = document.getElementById("bbb");
+                        element.addEventListener('click', () => {
+                            let width = 500;
+                            let height = 445;
+                            let top = (window.innerHeight - height) / 2 + screenY;
+                            let left = (window.innerWidth - width) / 2 + screenX;
+                
+                            let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                            spec += ', width=' + width + ', height=' + height;
+                            spec += ', top=' + top + ', left=' + left;
+                
+                            window.open('메이플 직업사진/해적/바이퍼.png', 'popup', spec);
+                        });
+                
+                        var element = document.getElementById("kkk");
+                        element.addEventListener('click', () => {
+                            let width = 500;
+                            let height = 445;
+                            let top = (window.innerHeight - height) / 2 + screenY;
+                            let left = (window.innerWidth - width) / 2 + screenX;
+                
+                            let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                            spec += ', width=' + width + ', height=' + height;
+                            spec += ', top=' + top + ', left=' + left;
+                
+                            window.open('메이플 직업사진/해적/캡틴.png', 'popup', spec);
+                        });
+                    </script>
+        
+                    </body>
+           
+            <button type="button" id ="btn8">확인</button>
+                                                    </small>
+    </div>
+</dialog>
+</div>
+</body> 
+</html>

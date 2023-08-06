@@ -1,0 +1,113 @@
+.signUpWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    overflow: auto;
+}
+
+.signUpContainer {
+    width: 73%;
+    height: 87%;
+
+    background-image: url(Images/Sign_up.png);
+    background-size: 100% 100%;
+}
+
+.signUp {
+    width: 450px;
+    height: 360px;
+
+    position: absolute;
+    top: 31%;
+    left: 43.8%;
+
+    /* background-color: #efefef;
+    opacity: 0.8; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+.siginUpText {
+    margin-bottom: 10px;
+}
+
+.siginUpText span {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: white;
+}
+
+.valueCheck {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.singUpInput {
+    width: 203px;
+    height: 27px;
+    padding-left: 10px;
+    margin-top: 2px;
+    margin-left: 8px;
+    
+    background-color:  rgba(0, 0, 0, .1);
+
+    font-size: 14px;
+}
+
+.inputId {
+    width: 120px;
+}
+
+.idDoubleCheckBtn {
+    width: 75px;
+    height: 33px;
+    font-weight: bold;
+    background-color: rgb(181, 160, 96);
+}
+
+.signUpBtn, .backBtn {
+    width: 210px;
+    height: 45px;
+    margin-left: 10px;
+    font-size: 25px;
+    background-color: rgb(181, 160, 96);
+}
+
+.signUpBtn {
+    margin-top: 62px;
+}
+
+.backBtn {
+    margin-top: 30px;
+}
+
+
+.isFalse {
+    color: red;
+    border: 2px solid red;
+}
+
+input:hover {
+    cursor: url("Images/cursor.png"), auto;
+}
+
+.currCharacter img {
+    width: 96.3px;
+    height: 100px;
+
+    position: absolute;
+    top: 42.5%;
+    left: 34%;
+}

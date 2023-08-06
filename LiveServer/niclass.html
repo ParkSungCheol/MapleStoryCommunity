@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('메이플 직업사진/도적/도적소개.png') ; 
+            background-size: 350px;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            position: relative;
+        }
+        .photo{
+            text-align: left;
+            margin-left: 23px;
+            margin-top: 155px;
+            
+            
+        }
+      
+       #sss{
+          padding-left: 11px; 
+          padding-right: 11px; 
+          
+         
+       }
+       #nnn{
+        padding-left: 8px; 
+          padding-right: 8px; 
+          margin-left: 1.5px;
+       }
+       
+       
+        
+    </style>
+</head>
+<body>
+    <div class="photo ">
+        <button id="sss">섀도어</button >
+        <button id="nnn">나이트로드</button >
+        
+            </div>
+
+            <script>
+                var element = document.getElementById("sss");
+                element.addEventListener('click', () => {
+                    let width = 500;
+                    let height = 445;
+                    let top = (window.innerHeight - height) / 2 + screenY;
+                    let left = (window.innerWidth - width) / 2 + screenX;
+        
+                    let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                    spec += ', width=' + width + ', height=' + height;
+                    spec += ', top=' + top + ', left=' + left;
+        
+                    window.open('메이플 직업사진/도적/섀도어.png', 'popup', spec);
+                });
+        
+                var element = document.getElementById("nnn");
+                element.addEventListener('click', () => {
+                    let width = 500;
+                    let height = 445;
+                    let top = (window.innerHeight - height) / 2 + screenY;
+                    let left = (window.innerWidth - width) / 2 + screenX;
+        
+                    let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                    spec += ', width=' + width + ', height=' + height;
+                    spec += ', top=' + top + ', left=' + left;
+        
+                    window.open('메이플 직업사진/도적/나이트로드.png', 'popup', spec);
+                });
+            </script>
+            </body>
+</html>

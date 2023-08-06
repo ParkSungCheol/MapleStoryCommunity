@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="book_tab.css">
+</head>
+<style>
+  body {
+    background-image: url(Images/bookImage.png);
+    background-size: 800px 600px;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    /* width: 100% */
+    left: 0;
+    right: 0;
+  }
+
+  h1 {
+    text-align: left;
+    position: relative;
+    padding-left: 100px;
+    padding-top: 20px;
+  }
+
+</style>
+
+<body>
+  <div class="tab_menu">
+    <h1>도감</h1>
+
+
+    <div class="container">
+
+      <div class="leftPage">
+        <a href="#tab1" class="btn1"><span>1. 사냥터별 몬스터</span></a>
+        <a href="#tab2" class="btn2"><span>2. 레벨별 장비</span></a><br>
+      </div>
+
+      <div class="rightPage">
+        
+        <div id="tab1" class="cont1">
+          <input onkeyup="filter1()" type="text1" id="value1" placeholder="사냥터를 검색하세요">
+          
+          <div class="monster">
+            
+          <div class="item1">
+            <span class="icon1">빅</span>
+            <span class="name1" id="golem">lv1~lv10 골렘사원</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">빅</span>
+            <span class="name1" id="forest">lv10~lv25 북쪽 숲</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">빅</span>
+            <span class="name1" id="gold">lv20~lv35 골드비치</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">빅</span>
+            <span class="name1" id="under">lv30~lv40 커닝시티 지하철</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">빅</span>
+            <span class="name1" id="fired">lv35~lv45 불타버린 땅</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">빅</span>
+            <span class="name1" id="treasure">lv45~lv60 유적발굴지</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">빅</span>
+            <span class="name1" id="quiet">lv50~lv65 조용한 습지</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">루</span>
+            <span class="name1" id="eos1~30">lv65~lv70 에오스탑 1층~30층</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">루</span>
+            <span class="name1" id="eos31~60">lv70~lv75 에오스탑 31층~60층</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">루</span>
+            <span class="name1" id="helios2~30">lv75~lv80 헬리오스탑 2층~30층</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">루</span>
+            <span class="name1" id="eos61~100">lv80~lv85 에오스탑 61층~100층</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">루</span>
+            <span class="name1" id="helios31~70">lv85~lv90 헬리오스탑 31층~70층</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">루</span>
+            <span class="name1" id="helios71~100">lv90~lv95 헬리오스탑 71층~100층</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">루</span>
+            <span class="name1" id="toy">lv95~lv100 장난감공장</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">무</span>
+            <span class="name1" id="sky">lv100~lv105 하늘숲 입구</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">무</span>
+            <span class="name1" id="bear">lv105~lv110 야생곰의 영토</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">무</span>
+            <span class="name1" id="rednose">lv115~lv120 빨간코해적단</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">무</span>
+            <span class="name1" id="plant">lv125~lv130 50년된 약초밭</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">무</span>
+            <span class="name1" id="kind">lv135~lv140 선인의 숲</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">무</span>
+            <span class="name1" id="monkey">lv140~lv145 천도과수원</span>
+          </div>
+
+          <div class="item1">
+            <span class="icon1">무</span>
+            <span class="name1" id="palace">lv145~lv150 황금사원</span>
+          </div>
+        </div>
+        <div class="cont1 page" id="paging1"></div>
+        </div>
+
+        <div id="tab2" class="cont2 hidden">
+          <input onkeyup="filter2()" type="text2" id="value2" placeholder="장비를 검색하세요">
+          
+          <div class="equip">
+
+          <div class="item2">
+            <span class="icon2">궁</span>
+            <span class="name2" id="wobow">lv10 워보우</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">궁</span>
+            <span class="name2" id="steelbow">lv15 합금활</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">궁</span>
+            <span class="name2" id="riden">lv20 라이덴</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">궁</span>
+            <span class="name2" id="rainger">lv30 사냥꾼의 활</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">도</span>
+            <span class="name2" id="ganier">lv10 가니어</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">도</span>
+            <span class="name2" id="trizamdar">lv15 삼각자마다르</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">도</span>
+            <span class="name2" id="steeltitans">lv15 스틸티탄즈</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">도</span>
+            <span class="name2" id="noname">lv20 무명도</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">마</span>
+            <span class="name2" id="woodwand">lv8 우드완드</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">마</span>
+            <span class="name2" id="woodstaff">lv10 나무스태프</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">마</span>
+            <span class="name2" id="hardwood">lv13 하드우드완드</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">마</span>
+            <span class="name2" id="metalwand">lv18 메탈완드</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">마</span>
+            <span class="name2" id="icewand">lv23 아이스완드</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">전</span>
+            <span class="name2" id="calsword">lv10 카알대검</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">전</span>
+            <span class="name2" id="savr">lv15 사브르</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">전</span>
+            <span class="name2" id="maps">lv25 지저분한 대걸래</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">전</span>
+            <span class="name2" id="gladius">lv30 글라디우스</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">전</span>
+            <span class="name2" id="wangfu">lv35 왕푸</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">해</span>
+            <span class="name2" id="steelnuckle">lv10 스틸너클</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">해</span>
+            <span class="name2" id="leather">lv15 레더암즈</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">해</span>
+            <span class="name2" id="double">lv20 더블테일너클</span>
+          </div>
+
+          <div class="item2">
+            <span class="icon2">해</span>
+            <span class="name2" id="frame">lv30 프레임핸즈</span>
+          </div>
+        </div>
+        </div>
+        <div class="cont2 hidden page" id="paging2"></div>
+      </div>
+      
+    </div>
+   
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="book_page1.js"></script>
+  <script type="text/javascript" src="book_page2.js"></script>
+  <script type="text/javascript" src="book_window1.js"></script>
+  <script type="text/javascript" src="book_window2.js"></script>
+
+  
+  <script type="text/javascript" src="book_test.js"></script>
+</body>
+
+</html>

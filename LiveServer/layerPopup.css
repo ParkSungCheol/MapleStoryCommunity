@@ -1,0 +1,160 @@
+.layerPopup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: auto;
+
+    z-index: 10;
+}
+
+.wrapper {
+
+    width: 100%;
+    height: 90%;
+    min-height: 680px;
+    min-width: 1600px;
+    overflow: hidden;
+
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 2;
+
+    overflow: auto;
+}
+
+.content {
+    background-image: url(Images/Board.jpg);
+    background-size: 100% 100%;
+
+    width: 80%;
+    height: 100%;
+
+    /* max-width: ;
+    max-height: ;
+    flex-shrink: ; */
+
+    /* background-color: blueviolet; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: auto;
+
+    flex-shrink: 1;
+}
+
+.nav {
+    width: 80%;
+    height: 10%;
+    /* border: 2px solid red; */
+
+    margin-top: 5px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav h1 {
+    font-size: 50px;
+    color: rgb(100, 100, 100);
+    margin-right: 30%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav h1 span {
+    color: rgb(243, 247, 242);
+}
+
+
+.nav input {
+    width: 60px;
+    height: 60px;
+
+    margin: 0px 30px;
+
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    background-color: rgb(243, 247, 242);
+
+    border-style: none;
+    
+}
+
+.close {
+    background-image: url(Images/close.jpg);
+    background-size: 100% 100%;
+}
+
+
+.nav input:hover {
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+.board {
+
+    width: 85%;
+    height: 65%;
+    /* border: 2px solid yellow; */
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(auto, auto);
+    gap: 50px 100px;
+
+    justify-content: center;
+
+    overflow: auto;
+}
+
+/* width */
+.board::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+.board::-webkit-scrollbar-track {
+    background: rgb(39, 43, 38);
+}
+
+/* Handle */
+.board::-webkit-scrollbar-thumb {
+    background: rgb(80, 97, 78);
+}
+
+/* Handle on hover */
+.board::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+.box:hover, input:hover {
+    cursor: url("Images/cursor.png"), auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.opacity {
+    opacity: 0.2;
+}

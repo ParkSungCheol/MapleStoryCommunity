@@ -1,0 +1,8 @@
+#lowbar{
+  position: absolute;
+  left: 40px;
+  
+  bottom: 0px;
+    color: white;
+    background: cadetblue;  
+  }

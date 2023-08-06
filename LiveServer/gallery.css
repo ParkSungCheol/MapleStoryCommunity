@@ -1,0 +1,16 @@
+.box {
+    width: 220px;
+    height: 200px;
+
+    background-color: rgb(39, 43, 38);
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+}
+
+.board .box:hover {
+    /* background: rgba(76, 175, 80, 0.3); */
+    opacity: 0.2;
+}

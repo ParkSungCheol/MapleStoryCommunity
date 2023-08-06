@@ -1,0 +1,70 @@
+.clickedMap {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(181, 188, 201, 0.8);
+}
+
+
+
+.clickedShowMap {
+
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.focusClickedMap {
+    width: 100%;
+    height: 100%;
+
+    border: 3px solid black;
+
+    overflow: auto;
+    text-align: center;
+
+}
+
+.focusClickedMap img {
+    width: 60%;
+    height: 40%;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.focusClickedMap:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+
+}
+
+.mapTitle {
+    font-size: 30px;
+    color: midnightblue;
+}
+
+.monsterList {
+    font-size: 15px;
+    color: midnightblue;
+}
+
+table, tr, td {
+    border: 1px solid black;
+    width: 700px;
+    margin-left: 10%;
+}

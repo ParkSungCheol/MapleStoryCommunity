@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="SignUp.css">
+</head>
+
+<body>
+
+<div class="signUpWrapper">
+    <div class="signUpContainer">
+
+
+        <div class="signUp">
+
+            <div class="siginUpText">
+                <span>Sign Up</span>
+            </div>
+            <div class="idCheck">
+                <input type="text" placeholder="아이디" class="singUpInput inputId"
+                       maxlength="12">
+                <button class="idDoubleCheckBtn" disabled="true">중복 확인</button>
+                <span class="valueCheck valueCheckId">영문, 숫자 4~12자로 입력해 주세요. </span>
+            </div>
+            <div class="pwCheck">
+                <input type="password" placeholder="비밀번호" class="singUpInput inputPw"
+                       maxlength="12">
+                <span class="valueCheck valueCheckPw">영문+숫자+특수문자 8~12자 </span>
+            </div>
+            <div class="pwValueCheck">
+                <input type="password" placeholder="비밀번호 확인" class="singUpInput inputPwCheck"
+                       maxlength="12">
+                <span class="valueCheck valueCheckPwCheck">비밀번호를 한 번 더 입력해 주세요. </span>
+            </div>
+            <div class="emailCheck">
+                <input type="text" placeholder="이메일" class="singUpInput inputEmail">
+                <span class="valueCheck valueCheckEmail">이메일 형식으로 입력해 주세요. </span>
+            </div>
+            <div class="phoneNumCheck">
+                <input type="text" placeholder="핸드폰 번호" class="singUpInput inputPhoneNum"
+                       maxlength="11">
+                <span class="valueCheck valueCheckPhoneNum">숫자만 입력해 주세요.</span>
+            </div>
+
+
+            <input type="button" value="회원가입" class="signUpBtn">
+            <input type="button" value="돌아가기" class="backBtn" onclick="location.href='http://localhost:8088/login'">
+
+        </div>
+
+        <div class="selectCharacter">
+            <div class="currCharacter">
+                <img src="Images/남자캐릭터 스탠드 오른쪽0.png" alt="">
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="signUp.js"></script>
+<script src="signUpAjax.js"></script>
+</body>
+
+</html>

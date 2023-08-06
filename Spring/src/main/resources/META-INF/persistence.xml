@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1"> 
+<persistence-unit name="JPABOOK"> <properties> 
+<!-- 필수 속성 --> 
+<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver"/> 
+<property name="javax.persistence.jdbc.user" value="maple_community"/> 
+<property name="javax.persistence.jdbc.password" value="maple"/> 
+<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521/xe"/> 
+<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle8iDialect" /> 
+
+<!-- 옵션 --> 
+<property name="hibernate.show_sql" value="true" /> 
+<property name="hibernate.format_sql" value="true" /> 
+<property name="hibernate.use_sql_comments" value="true" /> 
+<property name="hibernate.id.new_generator_mappings" value="true" /> 
+</properties> 
+</persistence-unit> 
+</persistence>

@@ -1,0 +1,151 @@
+
+  input {
+    margin: 8px 0px;
+  }
+  
+  #input-box {
+    
+    background-image: url(assets/물약상점_대화창.png);
+    width:370px;
+    height:130px;
+     position: absolute;
+     top: 0;
+      bottom: 0;
+       left: 0;
+        right: 0;
+         margin:auto;
+          overflow:hidden;
+
+  }
+
+  #input-box1 {
+    
+    background-image: url(assets/자유시장_대화창.png);
+    width:370px;
+    height:130px;
+     position: absolute;
+     top: 0;
+      bottom: 0;
+       left: 0;
+        right: 0;
+         margin:auto;
+          overflow:hidden;
+  
+  }
+
+  #input-box2 {
+    
+    background-image: url(assets/무기상점_대화창.png);
+    width:370px;
+    height:130px;
+     position: absolute;
+     top: 0;
+      bottom: 0;
+       left: 0;
+        right: 0;
+         margin:auto;
+          overflow:hidden;
+
+  }
+
+  #input-box3 {
+    
+    background-image: url(assets/선착장_대화창.png);
+    width:370px;
+    height:130px;
+     position: absolute;
+     top: 0;
+      bottom: 0;
+       left: 0;
+        right: 0;
+         margin:auto;
+          overflow:hidden;
+
+  }
+
+  #input-box4 {
+    
+    background-image: url(assets/궁수전직_대화창.png);
+    width:370px;
+    height:130px;
+     position: absolute;
+     top: 0;
+      bottom: 0;
+       left: 0;
+        right: 0;
+         margin:auto;
+          overflow:hidden;
+
+  }
+
+  #input-box5 {
+    
+    background-image: url(assets/도적전직_대화창.png);
+    width:370px;
+    height:130px;
+     position: absolute;
+     top: 0;
+      bottom: 0;
+       left: 0;
+        right: 0;
+         margin:auto;
+          overflow:hidden;
+
+  }
+
+  #input-box6 {
+    
+    background-image: url(assets/마법사전직_대화창.png);
+    width:370px;
+    height:130px;
+     position: absolute;
+     top: 0;
+      bottom: 0;
+       left: 0;
+        right: 0;
+         margin:auto;
+          overflow:hidden;
+
+  }
+
+  #input-box7 {
+    
+    background-image: url(assets/전사전직_대화창.png);
+    width:370px;
+    height:130px;
+     position: absolute;
+     top: 0;
+      bottom: 0;
+       left: 0;
+        right: 0;
+         margin:auto;
+          overflow:hidden;
+
+  }
+
+  #input-box8 {
+    
+    background-image: url(assets/해적전직_대화창.png);
+    width:370px;
+    height:130px;
+     position: absolute;
+     top: 0;
+      bottom: 0;
+       left: 0;
+        right: 0;
+         margin:auto;
+          overflow:hidden;
+
+  }
+#box, #box1{
+  margin-left : 7em;
+}
+#btn, #btn1, #btn2, #btn3, #btn4, #btn5, #btn6, #btn7, #btn8 {
+border: none;
+width: 50;
+height: 20;
+background-color:#bcde0b; 
+color:white; 
+margin-left : 15em;
+border-radius: 20%;
+}

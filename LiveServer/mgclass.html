@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('메이플 직업사진/마법사/마법사소개.png') ; 
+            background-size: 350px;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            position: relative;
+        }
+        .photo{
+            text-align: left;
+            margin-left: 0px;
+            margin-top: 160px;
+            font-family: '없는 글꼴',맑은 고딕;
+            
+        }
+      
+       #fire{
+          padding-left: 16px; 
+          padding-right: 16px; 
+          
+         
+       }
+       #ice{
+        padding-left: 16px; 
+          padding-right: 16px; 
+          margin-left: 3.1px;
+       }
+       #heal{
+        padding-left: 16px; 
+          padding-right: 16px; 
+          margin-left: 3.1px;
+       }
+        
+    </style>
+</head>
+<body>
+    <div class="photo ">
+        <button id="fire">불독</button >
+        <button id="ice">썬콜</button >
+        <button id="heal">비숍</button>
+            </div>
+
+            <script>
+                var element = document.getElementById("fire");
+                element.addEventListener('click', () => {
+                    let width = 500;
+                    let height = 445;
+                    let top = (window.innerHeight - height) / 2 + screenY;
+                    let left = (window.innerWidth - width) / 2 + screenX;
+        
+                    let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                    spec += ', width=' + width + ', height=' + height;
+                    spec += ', top=' + top + ', left=' + left;
+        
+                    window.open('메이플 직업사진/마법사/불독.png', 'popup', spec);
+                });
+        
+                var element = document.getElementById("ice");
+                element.addEventListener('click', () => {
+                    let width = 500;
+                    let height = 445;
+                    let top = (window.innerHeight - height) / 2 + screenY;
+                    let left = (window.innerWidth - width) / 2 + screenX;
+        
+                    let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                    spec += ', width=' + width + ', height=' + height;
+                    spec += ', top=' + top + ', left=' + left;
+        
+                    window.open('메이플 직업사진/마법사/썬콜.png', 'popup', spec);
+                });
+
+                var element = document.getElementById("heal");
+                element.addEventListener('click', () => {
+                    let width = 500;
+                    let height = 445;
+                    let top = (window.innerHeight - height) / 2 + screenY;
+                    let left = (window.innerWidth - width) / 2 + screenX;
+        
+                    let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                    spec += ', width=' + width + ', height=' + height;
+                    spec += ', top=' + top + ', left=' + left;
+        
+                    window.open('메이플 직업사진/마법사/비숍.png', 'popup', spec);
+                });
+            </script>
+            </body>
+</html>

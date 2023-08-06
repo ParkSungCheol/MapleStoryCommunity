@@ -1,0 +1,288 @@
+/* Freeview */
+.free-view-wrapper {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.free-view-go-list-btn {
+
+  float: right;
+  border: 0;
+  padding: 10px;
+
+  background-color: rgb(70, 49, 21);
+  color: white;
+}
+
+ #freeview_crud_btn {
+  border: 0;
+  padding: 10px;
+  float: right;
+
+  background-color: rgb(70, 49, 21);
+  color: white;
+}
+
+.free-view-row {
+  margin: 10px 0;
+  display: flex;
+  
+}
+
+.free-view-row table {
+  width: 470px;
+    
+}
+
+.itemBoardTable {
+  height: 200px;
+}
+
+.free-view-row table td{
+  width: 100px;
+}
+
+.free-view-row label{
+  width: 200px;
+}
+
+
+
+.free-view-row div {
+  width: 100%;
+}
+
+.free-view-row div div{
+  width: 100%;
+  height: 320px;
+}
+
+/* .free-view-row>label:first-child {
+  margin: 10px 0;
+  width: 30%;
+  font-weight: bold;
+}
+
+.free-view-row>*:nth-child(2) {
+  margin: 10px 0;
+  width: 70%;
+} */
+
+#freeview_crud_btn {
+
+  margin: 10px;
+  float: right;
+} 
+ 
+
+/*GuildCreate*/
+
+#create {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+#create_title {
+  border-color: black;
+  border-radius: 5px;
+}
+
+#create_text {
+  border-color: black;
+  border-radius: 5px;
+
+}
+
+#create_btn {
+  border-color: black;
+  border-radius: 5px;
+
+  float: right;
+
+}
+
+#search {
+  display: flex;
+  height: 25px;
+  justify-content: center;
+
+  /* color: white;
+  background: cadetblue; */
+}
+
+#search_box {
+  border-color: black;
+}
+
+#search_btn {
+  float: right;
+}
+
+.pagenums {
+  display: flex;
+  justify-content: center;
+}
+
+
+/*글쓰기 버튼 */
+.write_btn2 {
+  background: rgb(70, 49, 21);
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  margin: 10% 10%;
+
+}
+
+.write_btn2:hover {
+  background: #fff;
+  color: cadetblue;
+}
+
+.write_btn2:before, button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: cadetblue;
+  transition: 400ms ease all;
+}
+
+.write_btn2:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.write_btn2:hover:before, button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px auto;
+}
+
+#search_btn {
+  margin: 0px;
+  margin-left: 10px;
+  color: #fff;
+  border: none;
+  background-color: rgb(70, 49, 21);
+}
+
+#reset_btn {
+  margin-left: 10px;
+  color: #fff;
+  border: none;
+  background-color: rgb(70, 49, 21);
+}
+
+.likeBtn {
+  width: 48px;
+  font-size: 16px;
+  height: 36px;
+  color: white;
+  background-color: rgb(70, 49, 21);
+}
+
+
+#create {
+  width: 70%;
+  height: 400px;
+
+
+  display: flex;
+  justify-content: center;
+}
+
+#create form {
+  width: 500px;
+  text-align: center;
+  
+}
+
+#content_input {
+  width: 500px;
+  height: 200px;
+  
+}
+
+#write_btn, #list_btn {
+  width: 100px;
+  height: 34px;
+  margin: .5rem;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  border-style: none;
+  background-color: rgb(70, 49, 21);
+}
+
+#namem {
+  height: 30px;
+}
+
+form select {
+  width: 120px;
+}
+
+.raidSeverSelect {
+  width: 120px;
+  height: 30px;
+  margin-right: 30px;
+}
+
+.raidSeverLabel {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+
+#replybutton {
+  width: 170px;
+  height: 34px;
+  margin: .5rem;
+  /* padding: .5rem 1rem; */
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  border-style: none;
+  background-color: rgb(70, 49, 21);
+}
+
+#comment a{
+  font-size: 20px;
+}
+
+#comment .text {
+  height: 50px;
+  font-size: 15px;
+}
+
+.midify_reply, .delete_reply {
+  width: 70px;
+  height: 34px;
+  margin: .5rem;
+  /* padding: .5rem 1rem; */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  border-style: none;
+  background-color: rgb(70, 49, 21);
+}

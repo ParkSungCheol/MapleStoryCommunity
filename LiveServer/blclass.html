@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('메이플 직업사진/해적/해적소개.png') ; 
+            background-size: 350px;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            position: relative;
+        }
+        .photo{
+            text-align: left;
+            margin-left: 23px;
+            margin-top: 163px;
+            
+            
+        }
+      
+       #bbb{
+          padding-left: 15px; 
+          padding-right: 15px; 
+          
+         
+       }
+       #kkk{
+        padding-left: 18.5px; 
+          padding-right: 18.5px; 
+          margin-left: 5px;
+       }
+       
+       
+        
+    </style>
+</head>
+<body>
+    <div class="photo ">
+        <button id="bbb">바이퍼</button >
+        <button id="kkk">캡틴</button >
+        
+            </div>
+            <script>
+                var element = document.getElementById("bbb");
+                element.addEventListener('click', () => {
+                    let width = 500;
+                    let height = 445;
+                    let top = (window.innerHeight - height) / 2 + screenY;
+                    let left = (window.innerWidth - width) / 2 + screenX;
+        
+                    let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                    spec += ', width=' + width + ', height=' + height;
+                    spec += ', top=' + top + ', left=' + left;
+        
+                    window.open('메이플 직업사진/해적/바이퍼.png', 'popup', spec);
+                });
+        
+                var element = document.getElementById("kkk");
+                element.addEventListener('click', () => {
+                    let width = 500;
+                    let height = 445;
+                    let top = (window.innerHeight - height) / 2 + screenY;
+                    let left = (window.innerWidth - width) / 2 + screenX;
+        
+                    let spec = 'status=no, menubar=no, toolbar=no, resizable=no';
+                    spec += ', width=' + width + ', height=' + height;
+                    spec += ', top=' + top + ', left=' + left;
+        
+                    window.open('메이플 직업사진/해적/캡틴.png', 'popup', spec);
+                });
+            </script>
+
+            </body>
+</html>

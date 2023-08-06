@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="layerPopup.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="layerImage.css">
+    <link rel="stylesheet" href="layerInputImage.css">
+</head>
+
+<body>
+    <br><br>
+
+    <div class="layerPopup layerMain">
+
+        <div class="wrapper">
+
+            <div class="content">
+
+                <div class="nav">
+                    <h1><span>F</span>an <span>A</span>rt <span>G</span>allery</h1>
+
+                    
+                    <label for="inputImage" class="inputImageLabel">글쓰기</label>
+
+
+                    <input type="file" id="inputImage" class="hidden" accept="image/*" />
+                </div>
+
+                <div class="board">
+
+                    <!-- 
+                    <div class="box">
+                        <img src="../Images/test1.jpg" alt="">
+                        <span class="hidden">Writer</span>
+                    </div>
+                    <div class="box">
+                        <img src="../Images/test2.jpg" alt="">
+                    </div>
+                    <div class="box">
+                        <img src="../Images/test3.jpg" alt="">
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="layerPopup layerInputImage hidden">
+        <div class="layerInputImageWrapper">
+
+            <div class="preveiwImageInfo">
+                <span>작성자 :<span class="fanartWriter">DB값</span></span>
+                <span>작성일 :<span class="fanartMakeDate">DB값</span></span>
+            </div>
+
+            <div class="previewImage">
+                <img src="" alt="" />
+            </div>
+            <div class="inputImageBtn">
+                <button class="submitImgBtn">글쓰기</button>
+                <button class="cancelBtn">취소</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="layerPopup layerImage hidden">
+        <div class="layerImageWrapper">
+            <div class="layerImageNav">
+                <div class="imageInfo">
+                    <span>작성자 :<span class="fanartWriter2">DB값</span></span>
+                    <span>작성일 :<span class="fanartMakeDate2">DB값</span></span>
+                    <span class="fanartBnumber hidden">DB값</span>
+                </div>
+                <label for="updateImage" class="inputImageLabel updateFanart">수정</label>
+                <input type="file" id="updateImage" class="hidden" accept="image/*" />
+                <button class="deleteFanartBtn">삭제</button>
+                <input type="button" value="" class="focusImageClose" />
+            </div>
+
+            <div class="focusImage">
+                <!-- <div class="leftArrow">
+                    <input type="button" value="" class="leftArrowBtn">
+                </div> -->
+
+                <div class="clickedImage">
+                    <img src="" alt="">
+                    <button class="updateImageBtn hidden">수정하기</button>
+                </div>
+
+                <!-- <div class="rightArrow">
+                    <input type="button" value="" class="rightArrowBtn">
+                </div> -->
+
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="fanart.js"></script>
+    <script src="inputFanart.js"></script>
+    <script src="fanartAjax.js"></script>
+
+</body>
+
+</html>

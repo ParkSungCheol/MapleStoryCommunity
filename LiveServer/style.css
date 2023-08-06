@@ -1,0 +1,41 @@
+.wrapper {
+    margin: 20px;
+    margin-left: 50px;
+    height: 100vh;
+}
+
+hr {
+    width: 700px;
+    margin: 0;
+}
+
+h3 {
+    margin: 10px;
+}
+
+h3 span {
+    font-size: 15px;
+}
+
+pre {
+    
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.imageContainer {
+    display: flex;
+    
+}
+
+img {
+   width: 120px; 
+   height: 100px;
+   margin-left: 10px;
+   margin-top: 20px;
+}
+
+.imageContainer h4 {
+    margin-top: 5px;
+    text-align: center;
+}

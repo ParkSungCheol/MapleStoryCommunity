@@ -1,0 +1,58 @@
+.layerInputImageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preveiwImageInfo {
+    width: 100%;
+    height: 100px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.preveiwImageInfo span {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+
+.previewImage {
+    width: 500px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+.previewImage img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.inputImageBtn {
+    display: flex;
+}
+
+.inputImageBtn button {
+    width: 120px;
+    height: 50px;
+    margin: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    border: 20px;
+    color: rgb(243, 247, 242);
+    background-color: rgba(49, 61, 50);
+}
+
+.inputImageBtn button:hover {
+    cursor: url("../Images/cursor.png"), auto;
+    opacity: 0.5;
+}

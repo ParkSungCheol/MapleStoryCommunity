@@ -1,0 +1,109 @@
+.layerImage {    
+   z-index: 100;
+   opacity: 1;
+}
+
+.layerImageWrapper {
+    
+    width: 100%;
+    height: 85%;
+
+    /* background-color: #fff; */
+    /* border: 2px solid black; */
+    
+    margin-bottom: 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.layerImageNav {
+    width: 52%;
+    height: 10%;
+    
+    /* border: 2px solid black; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.layerImageNav input {
+    background-image: url(Images/close.jpg);
+    background-size: 100% 100%;
+    width: 60px;
+    height: 60px;    
+}
+
+.layerImageNav .imageInfo {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    margin-left: 0px;
+
+    background-color: lightblue;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.layerImageNav .imageInfo span{
+    margin-left:50px;
+    margin-top: 5px;
+}
+
+.focusImage {
+    /* border: 2px solid black; */
+    width: 65%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.focusImage img{
+    width: 80%;
+    height: 100%;
+}
+
+
+.leftArrow {
+    /* border: 2px solid black; */
+    width: 50px;
+    height: 50px;
+}
+
+.leftArrowBtn {
+    background-image: url(Images/leftArrowBtn.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.rightArrow {
+    /* border: 2px solid black; */
+    width: 50px;
+    height: 50px;
+}
+
+.rightArrowBtn {
+    background-image: url(Images/rightArrowBtn.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+.layerImageNav input:hover, .leftArrowBtn:hover, .rightArrowBtn:hover {
+    cursor: url("Images/cursor.png"), auto;
+    opacity: 0.5;
+}
+

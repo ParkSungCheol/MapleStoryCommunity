@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Log_in</title>
+
+    <link rel="stylesheet" href="Login.css">
+</head>
+
+<body>
+
+    <div class="loginWrapper">
+
+        <div class="loginContainer">
+
+            <div class="userLogin">
+                <input type="text" name="" placeholder="아이디를 입력하세요." class="userInput userId">
+                <input type="password" name="" placeholder="비밀번호를 입력하세요." class="userInput userPw">
+                <input type="button" value="로그인" class="loginBtn">
+                <input type="button" value="비회원 로그인" class="nonMemberBtn">
+            </div>
+            
+            <div class="selectCharacter">
+                <div class="leftCharacter arrowHover">
+                </div>
+                <div class="currCharacter">
+                    <img src="Images/character1.jpg" alt="">
+                </div>
+                <div class="rightCharacter arrowHover">
+                </div>
+            </div>
+
+            <div class="loginNav">
+                <button class="toSignUpPage" onclick="location.href='http://localhost:8088/signup'">회원가입</button>
+                <button class="toStartPage" onclick="location.href='http://localhost:8088/start'">처음으로</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="login.js"></script>
+    <script src="loginAjax.js"></script>
+</body>
+
+</html>

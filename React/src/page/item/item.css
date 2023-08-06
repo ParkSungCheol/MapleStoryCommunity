@@ -1,0 +1,92 @@
+#itemCreate {
+    display: flex;
+    justify-content: center;
+}
+
+#itemCreate form:nth-child(1) {
+    width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#itemCreate form:nth-child(1) select {
+    width: 120px;
+    height: 30px;
+    
+    margin-right: 80px;
+}
+
+.selectList {
+    margin-top: 15px;
+}
+
+.selectList label{
+    font-size: 14px;
+}
+
+.itemCreateCss {
+    width: 700px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.itemCreateContent {
+    margin-left: 140px;
+}
+
+.itemTable {
+    width: 1000px;
+    margin-left: 35%;
+    margin-top: 20px;
+}
+
+
+.itemTable tr {
+    display: flex;
+    
+}
+
+.itemTable td {
+    width: 75px;
+    height: 20px;
+    text-align: left;
+}
+
+.itemTable td:nth-child(1) {
+    width: 50px;
+    /* background-color: brown; */
+}
+
+.itemImage {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+.itemTable2 {
+    width: 1000px;
+    margin-left: 35%;
+    margin-top: 20px;
+}
+
+.itemTable2 tr {
+    display: flex;
+    
+}
+
+.itemTable2 td {
+    width: 75px;
+    height: 20px;
+    text-align: left;
+}
+
+.itemTable2 td:nth-child(1) {
+    width: 50px;
+    /* background-color: brown; */
+}

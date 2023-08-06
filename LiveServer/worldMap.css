@@ -1,0 +1,132 @@
+.worldMap {
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    min-height: 800px;
+    min-width: 1400px;
+
+    overflow: hidden;
+
+    background-color: rgb(169, 211, 232);
+}
+
+.showMap {
+    width: 100%;
+    height: 90%; 
+    overflow: hidden; 
+}
+
+.worldMapNav {
+    /* background-color: #fff; */
+    width: 90%;
+    height: 5%;
+    overflow: hidden;
+}
+
+.worldMapNav input {
+    background-image: url(Images/close.jpg);
+    background-size: 100% 100%;
+
+    width: 60px;
+    height: 60px;
+}
+
+
+.focusMap {
+
+    background-image: url(Images/worldMap.jpg);
+    background-size: 100% 100%;
+
+    width: 70%;
+    height: 80%;
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+.moveMap {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    /* background-color: royalblue; */
+    opacity: 0.9;
+}
+
+@keyframes blink-effect {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.moveMap:hover {
+    background-color: rgb(70, 74, 71);
+    animation: blink-effect 0.5s step-end infinite;
+    cursor: url(Images/cursor.png), auto;
+}
+
+.close:hover{
+    cursor: url(Images/cursor.png), auto;
+    opacity: 0.5;
+}
+
+/* 빅토리아 아일랜드 */
+.moveMap:nth-child(1) {
+    top: 17%;
+    left: 5%;
+    position: absolute;
+}
+
+/* 루더스 호수 */
+.moveMap:nth-child(2) {
+    top: 37%;
+    left: 25%;
+    position: absolute;
+}
+
+/* 무릉 도원 */
+.moveMap:nth-child(3) {
+    top: 43%;
+    left: 55%;
+    position: absolute;
+}
+
+
+/* width */
+.focusClickedMap::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+.focusClickedMap::-webkit-scrollbar-track {
+    background: rgb(39, 43, 38);
+}
+
+/* Handle */
+.focusClickedMap::-webkit-scrollbar-thumb {
+    background: rgb(80, 97, 78);
+}
+
+/* Handle on hover */
+.focusClickedMap::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+
+
+
+.hidden {
+    display: none;
+}
+
+.opacity {
+    opacity: 0.5;
+}

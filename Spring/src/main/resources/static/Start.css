@@ -1,0 +1,98 @@
+
+/* display:flex => https://www.w3schools.com/css/css3_flexbox.asp */
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
+.wrapper {
+    background-color: #ffffff;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 10px 30px 10px;
+}
+
+.content {
+    display: flex;
+    height: 85vh;  
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content video {
+    width: 700px;
+    height: max-content;
+}
+
+.enterBtn {
+    position: absolute;
+    top: 370px;  /* 버튼 위치 */
+    width: 200px;
+    height: 70px;
+    /* opacity: 0.7; */
+
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: Garamond, serif;
+    color: rgb(180, 200, 219);
+
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+/* 버튼에 마우스 올려졌을 때 */
+.enterBtn:hover {
+    opacity: 0.5;
+    background-color: rgb(66, 88, 110);
+}
+
+/* hiiden */
+.hidden {
+    display: none;
+}
+
+.fadeIn {
+    /* fadein 효과 1초 동안 진행 */
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    /* 투명도 0부터 1까지 */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeout {
+    /* fadeout 효과 1초 동안 진행 */
+    animation: fadeout 1s;
+}
+
+@keyframes fadeout {
+    /* 투명도 1부터 0까지 */
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.bgChange {
+    background-color: rgb(255, 255, 255);
+}
