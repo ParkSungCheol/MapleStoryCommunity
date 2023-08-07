@@ -46,8 +46,8 @@
 + 블로그
   + https://believeme.tistory.com/entry/%EB%A9%80%ED%8B%B0%EC%BA%A0%ED%8D%BC%EC%8A%A4-%EC%84%B8%EB%AF%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B2%B0%EA%B3%BC
 + 스크린샷
-  + Main&nbsp;Page<br/>
-    ![image](https://user-images.githubusercontent.com/93702328/162620241-41851b64-1e5b-46c0-b27f-cb0bfccdb23a.png)
+  + Login
+    <img width="522" alt="login" src="https://github.com/ParkSungCheol/MapleStoryCommunity/assets/93702296/5960616b-4ff8-4b98-8f84-9658045dad3f">
   + Exhibition&nbsp;Page<br/>
     ![image](https://user-images.githubusercontent.com/93702328/162623318-e5c16c80-2da4-43a8-b23d-aa0c0c953b60.png)
 ------------
