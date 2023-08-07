@@ -37,8 +37,7 @@
     **중력과 땅, 포탈 등을 구현**하여 게임하는 듯한 현장감 부여
 ------------
 ### 프로젝트 설치 및 실행방법은 어떻게 되나요?
-+ **Exhibition** : VS LiveServer를 이용하여 5500번 포트로 실행<br/>
-+ **ExhibitionGame** : VS LiveServer를 이용하여 5501번 포트로 실행<br/>
++ **LiveServer** : VS LiveServer를 이용하여 5500번 포트로 실행<br/>
 + **React** : npm start 명령어로 3000번 포트로 실행<br/>
 + **Spring** : SpringBoot이므로 내장 톰캣을 이용해 8088번 포트로 실행 (DB연결이 필요할 시 application.yml에 DB연결정보 추가)<br/>
 ------------
